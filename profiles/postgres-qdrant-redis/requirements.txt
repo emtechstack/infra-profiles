@@ -22,3 +22,4 @@ httpx
 requests
 sse-starlette==2.0.0
 langchain-qdrant
+emtechstack
