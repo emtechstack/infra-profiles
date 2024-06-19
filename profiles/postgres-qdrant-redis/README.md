@@ -1,4 +1,5 @@
 ## Links
 
-### Installation
-1. Install (Python)[https://www.python.org/downloads/]
+This profile has been deprecated. please use `postgresql-qdrant-redis` instead.
+
+Thanks :)
