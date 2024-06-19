@@ -56,7 +56,7 @@ For more information check [EmTechStack](https://github.com/emtechstack/emtechst
 | Profile Name              | Ingredients                            | Status     | Command to Run Profile                           |
 |---------------------------|----------------------------------------|------------|-------------------------------------------------|
 | postgres-qdrant-redis     | PostgreSQL, Qdrant Vector Database, Redis | Deprecated | `emtechstack init --profile postgres-qdrant-redis --name sample_app` |
-| postgresql-qdrant-redis   | PostgreSQL, Qdrant Vector Database, Redis | Live       | `emtechstack init --profile postgresql-qdrant-redis --name sample_app` |
+| [postgresql-qdrant-redis](https://github.com/emtechstack/infra-profiles/tree/main/profiles/postgresql-qdrant-redis)   | PostgreSQL, Qdrant Vector Database, Redis | Live       | `emtechstack init --profile postgresql-qdrant-redis --name sample_app` |
 
 
 Choose the profile that aligns with your project requirements and explore its directory for more information.
