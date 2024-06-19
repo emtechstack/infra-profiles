@@ -10,12 +10,13 @@
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             width: 100%;
+            color: white;
         }
 
         @keyframes gradient {
@@ -26,7 +27,7 @@
 
         .container {
             text-align: center;
-            color: white;
+            margin-top: 50px;
         }
 
         h1 {
@@ -45,7 +46,6 @@
             padding: 1em 2em;
             color: white;
             text-decoration: none;
-            border: 2px solid white;
             border-radius: 0.5em;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -54,14 +54,190 @@
             background-color: white;
             color: #333;
         }
+
+        .dashboard {
+            margin: 20px 0;
+        }
+
+        .dashboard button {
+            margin: 10px;
+            padding: 1em 2em;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dashboard button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .infinity-list {
+            display: flex;
+            overflow-x: hidden;
+            width: 100%;
+            height: 150px; /* Adjust this height as needed */
+            white-space: nowrap;
+        }
+
+        .infinity-list img {
+            width: 250px; /* Adjust this width as needed */
+            height: 100%;
+            margin: 0 10px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+            object-fit: contain;
+        }
+
+        .infinity-list img:hover {
+            filter: grayscale(0%);
+        }
+
+        .infinity-list:hover .scrolling {
+            animation-play-state: paused;
+        }
+
+        .scrolling {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        table {
+            width: 50%;
+            margin: 5% 0;
+            border-collapse: collapse;
+            text-align: left;
+            text-align: center;
+            color: white;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+        }
+
+        th, td {
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="text-align: center; align-content: center;">
         <h1>Welcome to EmTechStack AI Dev Tools</h1>
-        <p>Version 0.0.4</p>
-        <a href="/docs">Endpoint Documentation</a>
-        <a href="https://github.com/emtechstack/emtechstack">EmTechStack AI Dev Tools Documentation</a>
+        <p>Version 0.0.84</p>
+
+        <br/>
+        <br/>
+
+        <div class="dashboard">
+            <h2>Admin Access<h2>
+            <button onclick="window.location.href='http://localhost:6333'">Qdrant Dashboard</button>
+            <button onclick="window.location.href='http://localhost:6381'">Redis Dashboard</button>
+            <button onclick="window.location.href='http://localhost:6444'">PostgreSQL Dashboard</button>
+            <button href="/docs">Endpoint Documentation</a>
+            <button href="https://github.com/emtechstack/emtechstack">EmTechStack AI Dev Tools Documentation</a>
+        </div>
+        <br/>
+        <br/>
+        <div class="infinity-list">
+            <div class="scrolling">
+                <a href="https://langchain.com"><img src="statics/icons/infra-langchain.png" alt="Langchain"></a>
+                <a href="https://library1.com"><img src="statics/icons/infra-langgraph.png" alt="LangGraph"></a>
+                <a href="https://library1.com"><img src="statics/icons/infra-postgresql.png" alt="Postgre SQL"></a>
+                <a href="https://library1.com"><img src="statics/icons/infra-qdrant.png" alt="Qdrant"></a>
+                <a href="https://library1.com"><img src="statics/icons/infra-redis.png" alt="Redis"></a>
+                
+            </div>
+        </div>
+        <center>
+        <h2>Libraries Version</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Library</th>
+                    <th>Version</th>
+                    <th>Installation</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>EmTechStack</td>
+                    <td>1.0.0</td>
+                    <td><code>pip install emtechstack</code></td>
+                    <td>
+                        <p><code>emtechstack start-api</code> - Start API</p>
+                        <p><code>emtechstack stop-api</code> - Stop API</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>langchain</td>
+                    <td>1.0.0</td>
+                    <td><code>pip install emtechstack</code></td>
+                    <td><p>To interact with AI LLM models and building AI enable apps</p></td>
+                </tr>
+                <tr>
+                    <td>langgraph</td>
+                    <td>1.0.0</td>
+                    <td><code>pip install emtechstack</code></td>
+                    <td><p>To develop LLM enabled agentic architecture apps</p></td>
+                </tr>
+                <!-- Add more libraries as needed -->
+            </tbody>
+        </table>
+    </center>
+    <center>
+        <h2>Installation & Commands</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Code</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Start Infra</td>
+                    <td><code>emtechstack start-infra</code></td>
+                    <td>
+                        <p>Start the Infrastructure by creating instances of PostgreSQL, Qdrant and Redis. It will also provide admin dashboards for each.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Start API</td>
+                    <td><code>emtechstack start-api</code></td>
+                    <td>
+                        <p>Start The API</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stop API</td>
+                    <td><code>emtechstack stop-api</code></td>
+                    <td>
+                        <p>Stop The API</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stop Infra</td>
+                    <td><code>emtechstack stop-infra</code></td>
+                    <td>
+                        <p>Stop all of the dockers related to infra and also admin dashboards as well.</p>
+                    </td>
+                </tr>
+                <!-- Add more libraries as needed -->
+            </tbody>
+        </table>
+    </center>
+    <br/>
+    <br/>
     </div>
 </body>
 </html>
