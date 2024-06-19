@@ -10,4 +10,3 @@ app.mount("/statics", StaticFiles(directory="statics"), name="statics")
 # Include the router
 app.include_router(hello_world_router)
 app.include_router(home_router)
-

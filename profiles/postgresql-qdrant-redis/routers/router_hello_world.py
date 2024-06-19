@@ -13,6 +13,7 @@ load_dotenv()
 
 router = APIRouter(prefix="/say", tags=["Router 1"])
 
+
 @router.get("/", response_class=JSONResponse)
 async def hello(request: Request):
     return {"answer": "hello"}
