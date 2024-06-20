@@ -1,6 +1,25 @@
 ## PostgreSQL, Qdrant, Redis
 In this profile you can use `postgresql` database, `qdrant` vector database and `redis` as part of your infra. 
 
+## Ingrediants & Project Dependencies
+
+| Library                | Version  | Description                                                      |
+|------------------------|----------|------------------------------------------------------------------|
+| `emtechstack`          | `-`      | A custom library for emerging technologies stack management.     |
+| `fastapi`              | `0.111.0`| A modern, fast (high-performance) web framework for building APIs.|
+| `langchain`            | `0.2.5`  | Library for chaining language models together.                   |
+| `langchain-community`  | `0.2.5`  | Community-driven extensions for langchain.                       |
+| `langchain-openai`     | `0.1.8`  | OpenAI integration for langchain.                                |
+| `langchain-qdrant`     | `0.1.1`  | Qdrant integration for langchain.                                |
+| `langchainhub`         | `0.1.20` | A hub for langchain components and models.                       |
+| `langgraph`            | `0.0.69` | A library for creating and manipulating language agents.         |
+| `openai`               | `1.35.1` | OpenAI API client library.                                       |
+| `python-dotenv`        | `0.21.0` | Reads key-value pairs from a .env file and sets them as environment variables. |
+| `requests`             | `2.32.3` | Simple, yet elegant HTTP library.                                |
+| `sse-starlette`        | `2.0.0`  | Server-Sent Events for Starlette.                                |
+| `streamlit`            | `1.35.0` | A faster way to build and share data apps.                       |
+
+
 
 ### Installation
 1. Install [Python](https://www.python.org/downloads/)
