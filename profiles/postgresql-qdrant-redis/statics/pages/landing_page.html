@@ -12,9 +12,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            background: linear-gradient(-45deg, #ee7752, #9a355c, #23a6d5, #23d5ab, #d5b123);
+            background-size: 500% 500%;
+            animation: gradient 5s ease infinite;
             width: 100%;
             color: white;
         }
@@ -131,14 +131,15 @@
 <body>
     <div class="container" style="text-align: center; align-content: center;">
         <h1>Welcome to EmTechStack AI Dev Tools</h1>
-        <p>Version 0.0.84</p>
-
+        <code style="background-color: white; color: black; padding: 10px;">postgresql-qdrant-redis | v0.1.12</code>
+        <br/>
+        <br/>
         <br/>
         <br/>
 
         <div class="dashboard">
             <h2>Admin Access<h2>
-            <button onclick="window.location.href='http://localhost:6333'">Qdrant Dashboard</button>
+            <button onclick="window.location.href='http://localhost:6333/dashboard'">Qdrant Dashboard</button>
             <button onclick="window.location.href='http://localhost:6381'">Redis Dashboard</button>
             <button onclick="window.location.href='http://localhost:6444'">PostgreSQL Dashboard</button>
             <button href="/docs">Endpoint Documentation</a>
@@ -148,11 +149,11 @@
         <br/>
         <div class="infinity-list">
             <div class="scrolling">
-                <a href="https://langchain.com"><img src="statics/icons/infra-langchain.png" alt="Langchain"></a>
-                <a href="https://library1.com"><img src="statics/icons/infra-langgraph.png" alt="LangGraph"></a>
-                <a href="https://library1.com"><img src="statics/icons/infra-postgresql.png" alt="Postgre SQL"></a>
-                <a href="https://library1.com"><img src="statics/icons/infra-qdrant.png" alt="Qdrant"></a>
-                <a href="https://library1.com"><img src="statics/icons/infra-redis.png" alt="Redis"></a>
+                <a href="https://python.langchain.com/v0.2/docs/introduction/"><img src="statics/icons/infra-langchain.png" alt="Langchain"></a>
+                <a href="https://langchain-ai.github.io/langgraph/"><img src="statics/icons/infra-langgraph.png" alt="LangGraph"></a>
+                <a href="https://www.postgresql.org/"><img src="statics/icons/infra-postgresql.png" alt="Postgre SQL"></a>
+                <a href="https://qdrant.tech/"><img src="statics/icons/infra-qdrant.png" alt="Qdrant"></a>
+                <a href="https://redis.io/"><img src="statics/icons/infra-redis.png" alt="Redis"></a>
                 
             </div>
         </div>
@@ -163,36 +164,96 @@
                 <tr>
                     <th>Library</th>
                     <th>Version</th>
-                    <th>Installation</th>
+                    <th>Repository</th>
                     <th>Usage</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>EmTechStack</td>
-                    <td>1.0.0</td>
-                    <td><code>pip install emtechstack</code></td>
+                    <td>emtechstack</td>
+                    <td>latest</td>
+                    <td><a href="https://github.com/emtechstack/emtechstack">Go To Github</a></td>
                     <td>
-                        <p><code>emtechstack start-api</code> - Start API</p>
-                        <p><code>emtechstack stop-api</code> - Stop API</p>
+                        <p>EmTechStack AI Dev Tools for building the templates (profiles) and infrastructure.</p>
                     </td>
                 </tr>
                 <tr>
                     <td>langchain</td>
-                    <td>1.0.0</td>
-                    <td><code>pip install emtechstack</code></td>
+                    <td>0.2.5</td>
+                    <td><a href="https://github.com/langchain-ai/langchain">Go To Github</a></td>
                     <td><p>To interact with AI LLM models and building AI enable apps</p></td>
                 </tr>
                 <tr>
+                    <td>langchain-community</td>
+                    <td>0.2.5</td>
+                    <td><a href="https://github.com/langchain-ai/langchain">Go To Github</a></td>
+                    <td><p>To interact with AI LLM models and building AI enable apps</p></td>
+                </tr>
+                <tr>
+                    <td>langchainhub</td>
+                    <td>0.1.20</td>
+                    <td><a href="https://github.com/langchain-ai/langchain">Go To Github</a></td>
+                    <td><p>To interact with AI LLM models and building AI enable apps</p></td>
+                </tr>
+                <tr>
+                    <td>langchain-openai</td>
+                    <td>0.1.8</td>
+                    <td><a href="https://github.com/langchain-ai/langchain"">Go To Github</a></td>
+                    <td><p>To interact with OpenAI LLMs</p></td>
+                </tr>
+                <tr>
+                    <td>openai</td>
+                    <td>1.35.1</td>
+                    <td><a href="https://github.com/openai/openai-python">Go To Github</a></td>
+                    <td><p>To interact with OpenAI LLMs</p></td>
+                </tr>
+                <tr>
+                    <td>langchain-qdrant</td>
+                    <td>0.1.1</td>
+                    <td><a href="https://github.com/langchain-ai/langchain">Go To Github</a></td>
+                    <td><p>To build interaction between chains and Qdrant</p></td>
+                </tr>
+                <tr>
                     <td>langgraph</td>
-                    <td>1.0.0</td>
-                    <td><code>pip install emtechstack</code></td>
+                    <td>0.0.69</td>
+                    <td><a href="https://github.com/langchain-ai/langgraph">Go To Github</a></td>
                     <td><p>To develop LLM enabled agentic architecture apps</p></td>
+                </tr>
+                <tr>
+                    <td>python-dotenv</td>
+                    <td>0.21.0</td>
+                    <td><a href="https://github.com/theskumar/python-dotenv">Go To Github</a></td>
+                    <td><p>For env variable management</p></td>
+                </tr>
+                <tr>
+                    <td>requests</td>
+                    <td>2.32.3</td>
+                    <td><a href="https://github.com/psf/requests">Go To Github</a></td>
+                    <td><p>To manage the requests and web interaction</p></td>
+                </tr>
+                <tr>
+                    <td>fastapi</td>
+                    <td>0.111.0</td>
+                    <td><a href="https://github.com/tiangolo/fastapi">Go To Github</a></td>
+                    <td><p>To build AI enabled backends</p></td>
+                </tr>
+                <tr>
+                    <td>sse-starlette</td>
+                    <td>2.0.0</td>
+                    <td><a href="https://github.com/sysid/sse-starlette">Go To Github</a></td>
+                    <td><p>To develop steaming by SSE approach</p></td>
+                </tr>
+                <tr>
+                    <td>streamlit</td>
+                    <td>1.35.0</td>
+                    <td><a href="https://github.com/streamlit/streamlit">Go To Github</a></td>
+                    <td><p>To develop GUI for AI demo usecases</p></td>
                 </tr>
                 <!-- Add more libraries as needed -->
             </tbody>
         </table>
     </center>
+
     <center>
         <h2>Installation & Commands</h2>
         <table>
