@@ -1,14 +1,19 @@
-[![Docker](https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png)](https://www.docker.com/)
-
-[![VSCode](https://code.visualstudio.com/assets/images/code-stable.png)](https://code.visualstudio.com/)
-
-[![Qdrant](https://github.com/qdrant/qdrant/raw/master/docs/logo.svg)](https://qdrant.tech/)
-
-[![PostgreSQL](https://avatars.githubusercontent.com/u/177543?s=200&v=4)](https://www.postgresql.org/)
-
-[![Redis](https://redis.io/wp-content/uploads/2024/04/Logotype.svg?auto=webp&quality=85,75&width=120)](https://redis.io/)
 
 
+<p align="center">
+  <a href="https://code.visualstudio.com/">
+    <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VSCode" width="100" height="100"/>
+  </a>
+  <a href="https://www.postgresql.org/">
+    <img src="https://avatars.githubusercontent.com/u/177543?s=200&v=4" alt="PostgreSQL" width="100" height="100"/>
+  </a>
+  <a href="https://redis.io/">
+    <img src="https://redis.io/wp-content/uploads/2024/04/Logotype.svg?auto=webp&quality=85,75&width=120" alt="Redis" width="100" height="100"/>
+  </a>
+  <a href="https://qdrant.tech/">
+    <img src="https://github.com/qdrant/qdrant/raw/master/docs/logo.svg" alt="Qdrant" width="150" height="100"/>
+  </a>
+</p>
 
 
 
@@ -19,7 +24,7 @@ In this profile you can use `postgresql` database, `qdrant` vector database and 
 
 | Library                | Version  | Description                                                      |
 |------------------------|----------|------------------------------------------------------------------|
-| `emtechstack`          | `-`      | A custom library for emerging technologies stack management.     |
+| `emtechstack`          | `latest`      | A custom library for emerging technologies stack management.     |
 | `fastapi`              | `0.111.0`| A modern, fast (high-performance) web framework for building APIs.|
 | `langchain`            | `0.2.5`  | Library for chaining language models together.                   |
 | `langchain-community`  | `0.2.5`  | Community-driven extensions for langchain.                       |
