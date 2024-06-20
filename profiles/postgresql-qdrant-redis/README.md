@@ -1,3 +1,17 @@
+[![Docker](https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png)](https://www.docker.com/)
+
+[![VSCode](https://code.visualstudio.com/assets/images/code-stable.png)](https://code.visualstudio.com/)
+
+[![Qdrant](https://github.com/qdrant/qdrant/raw/master/docs/logo.svg)](https://qdrant.tech/)
+
+[![PostgreSQL](https://avatars.githubusercontent.com/u/177543?s=200&v=4)](https://www.postgresql.org/)
+
+[![Redis](https://redis.io/wp-content/uploads/2024/04/Logotype.svg?auto=webp&quality=85,75&width=120)](https://redis.io/)
+
+
+
+
+
 ## PostgreSQL, Qdrant, Redis
 In this profile you can use `postgresql` database, `qdrant` vector database and `redis` as part of your infra. 
 
