@@ -1,13 +1,13 @@
-python-dotenv==0.21.0
-# llama-index
-openai
-langchain
-langchainhub
-langchain-community
-langchain-openai
-streamlit
-fastapi
-requests
-sse-starlette==2.0.0
-langchain-qdrant
 emtechstack
+fastapi==0.111.0
+langchain==0.2.5
+langchain-community==0.2.5
+langchain-openai==0.1.8
+langchain-qdrant==0.1.1
+langchainhub==0.1.20
+langgraph==0.0.69
+openai==1.35.1
+python-dotenv==0.21.0
+requests==2.32.3
+sse-starlette==2.0.0
+streamlit==1.35.0
