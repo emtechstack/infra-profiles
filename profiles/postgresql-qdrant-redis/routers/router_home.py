@@ -8,7 +8,7 @@ load_dotenv()
 router = APIRouter(tags=["Home"])
 
 
-@router.get("/", response_class=HTMLResponse)
+@router.get("/", response_class=HTMLResponse, include_in_schema=False)
 async def welcome(request: Request):
     html_content = Path("statics/pages/landing_page.html").read_text()
     return HTMLResponse(content=html_content)
