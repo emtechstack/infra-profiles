@@ -7,6 +7,8 @@ import shutil
 import asyncio
 from dotenv import load_dotenv
 
+from services.service_hello import ServiceGreetings
+
 from sse_starlette.sse import EventSourceResponse
 
 load_dotenv()
@@ -16,4 +18,4 @@ router = APIRouter(prefix="/say", tags=["Router 1"])
 
 @router.get("/", response_class=JSONResponse)
 async def hello(request: Request):
-    return {"answer": "hello"}
+    return {"answer": ServiceGreetings(name='EmTechStack Dev').greet()}
